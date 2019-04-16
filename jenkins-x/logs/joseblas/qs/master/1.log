@@ -1,0 +1,561 @@
+Step: build-step-credential-initializer-s6szw:
+
+{"level":"warn","ts":1555426269.833094,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/backport-container-name-fix\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1555426269.8344138,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Step: build-step-git-source-********-qs-master-wkg4g:
+
+{"level":"warn","ts":1555426272.2806466,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/backport-container-name-fix\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1555426273.007783,"logger":"fallback-logger","caller":"git-init/main.go:99","msg":"Successfully cloned \"https://github.com/********/qs\" @ \"v0.0.1\" in path \"/workspace/source\""}
+Step: build-step-place-tools:
+
+Step: build-step-git-merge:
+
+Warning failed to load version: failed to parse version -dev+9e73adc0b: No Major.Minor.Patch elements found
+time="2019-04-16T14:52:38Z" level=info msg="got "
+Using SHAs from PULL_REFS=master:
+time="2019-04-16T14:52:38Z" level=warning msg="no SHAs to merge, falling back to initial cloned commit"
+Step: build-step-setup-**-git-credentials:
+
+{"level":"info","msg":"Generated Git credentials file /workspace/xdg_config/git/credentials\n","time":"2019-04-16T14:52:50Z"}
+Step: build-step-build-sbt-assembly:
+
+Picked up _JAVA_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dsun.zip.disableMemoryMapping=true -XX:+UseParallelGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Xms10m -Xmx192m
+OpenJDK 64-Bit Server VM warning: If the number of processors is expected to increase from one, then you should configure the number of parallel GC threads appropriately using -XX:ParallelGCThreads=N
+Getting org.scala-sbt sbt 0.13.16  (this may take some time)...
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt/0.13.16/jars/sbt.jar ...
+	[SUCCESSFUL ] org.scala-sbt#sbt;0.13.16!sbt.jar (1360ms)
+downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.6/scala-library-2.10.6.jar ...
+	[SUCCESSFUL ] org.scala-lang#scala-library;2.10.6!scala-library.jar (344ms)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/main/0.13.16/jars/main.jar ...
+	[SUCCESSFUL ] org.scala-sbt#main;0.13.16!main.jar (1663ms)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/compiler-interface/0.13.16/jars/compiler-interface.jar ...
+	[SUCCESSFUL ] org.scala-sbt#compiler-interface;0.13.16!compiler-interface.jar (1452ms)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/actions/0.13.16/jars/actions.jar ...
+	[SUCCESSFUL ] org.scala-sbt#actions;0.13.16!actions.jar (1431ms)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/main-settings/0.13.16/jars/main-settings.jar ...
+	[SUCCESSFUL ] org.scala-sbt#main-settings;0.13.16!main-settings.jar (1436ms)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/interface/0.13.16/jars/interface.jar ...
+	[SUCCESSFUL ] org.scala-sbt#interface;0.13.16!interface.jar (1390ms)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/io/0.13.16/jars/io.jar ...
+	[SUCCESSFUL ] org.scala-sbt#io;0.13.16!io.jar (1411ms)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/ivy/0.13.16/jars/ivy.jar ...
+	[SUCCESSFUL ] org.scala-sbt#ivy;0.13.16!ivy.jar (1556ms)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/logging/0.13.16/jars/logging.jar ...
+	[SUCCESSFUL ] org.scala-sbt#logging;0.13.16!logging.jar (1384ms)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/logic/0.13.16/jars/logic.jar ...
+	[SUCCESSFUL ] org.scala-sbt#logic;0.13.16!logic.jar (1469ms)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/process/0.13.16/jars/process.jar ...
+	[SUCCESSFUL ] org.scala-sbt#process;0.13.16!process.jar (1352ms)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/run/0.13.16/jars/run.jar ...
+	[SUCCESSFUL ] org.scala-sbt#run;0.13.16!run.jar (1346ms)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/command/0.13.16/jars/command.jar ...
+	[SUCCESSFUL ] org.scala-sbt#command;0.13.16!command.jar (1493ms)
+downloading https://repo1.maven.org/maven2/org/scala-sbt/launcher-interface/1.0.1/launcher-interface-1.0.1.jar ...
+	[SUCCESSFUL ] org.scala-sbt#launcher-interface;1.0.1!launcher-interface.jar (72ms)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/classpath/0.13.16/jars/classpath.jar ...
+	[SUCCESSFUL ] org.scala-sbt#classpath;0.13.16!classpath.jar (1363ms)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/completion/0.13.16/jars/completion.jar ...
+	[SUCCESSFUL ] org.scala-sbt#completion;0.13.16!completion.jar (1456ms)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/api/0.13.16/jars/api.jar ...
+	[SUCCESSFUL ] org.scala-sbt#api;0.13.16!api.jar (1409ms)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/compiler-integration/0.13.16/jars/compiler-integration.jar ...
+	[SUCCESSFUL ] org.scala-sbt#compiler-integration;0.13.16!compiler-integration.jar (1434ms)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/compiler-ivy-integration/0.13.16/jars/compiler-ivy-integration.jar ...
+	[SUCCESSFUL ] org.scala-sbt#compiler-ivy-integration;0.13.16!compiler-ivy-integration.jar (1355ms)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/relation/0.13.16/jars/relation.jar ...
+	[SUCCESSFUL ] org.scala-sbt#relation;0.13.16!relation.jar (1350ms)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/task-system/0.13.16/jars/task-system.jar ...
+	[SUCCESSFUL ] org.scala-sbt#task-system;0.13.16!task-system.jar (1363ms)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/tasks/0.13.16/jars/tasks.jar ...
+	[SUCCESSFUL ] org.scala-sbt#tasks;0.13.16!tasks.jar (1443ms)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/tracking/0.13.16/jars/tracking.jar ...
+	[SUCCESSFUL ] org.scala-sbt#tracking;0.13.16!tracking.jar (1340ms)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/testing/0.13.16/jars/testing.jar ...
+	[SUCCESSFUL ] org.scala-sbt#testing;0.13.16!testing.jar (1374ms)
+downloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.6/scala-compiler-2.10.6.jar ...
+	[SUCCESSFUL ] org.scala-lang#scala-compiler;2.10.6!scala-compiler.jar (555ms)
+downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.6/scala-reflect-2.10.6.jar ...
+	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.10.6!scala-reflect.jar (138ms)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/control/0.13.16/jars/control.jar ...
+	[SUCCESSFUL ] org.scala-sbt#control;0.13.16!control.jar (1367ms)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/collections/0.13.16/jars/collections.jar ...
+	[SUCCESSFUL ] org.scala-sbt#collections;0.13.16!collections.jar (1510ms)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/classfile/0.13.16/jars/classfile.jar ...
+	[SUCCESSFUL ] org.scala-sbt#classfile;0.13.16!classfile.jar (1372ms)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/incremental-compiler/0.13.16/jars/incremental-compiler.jar ...
+	[SUCCESSFUL ] org.scala-sbt#incremental-compiler;0.13.16!incremental-compiler.jar (1412ms)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/compile/0.13.16/jars/compile.jar ...
+	[SUCCESSFUL ] org.scala-sbt#compile;0.13.16!compile.jar (1435ms)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/persist/0.13.16/jars/persist.jar ...
+	[SUCCESSFUL ] org.scala-sbt#persist;0.13.16!persist.jar (1407ms)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-tools.sbinary/sbinary_2.10/0.4.2/jars/sbinary_2.10.jar ...
+	[SUCCESSFUL ] org.scala-tools.sbinary#sbinary_2.10;0.4.2!sbinary_2.10.jar (1380ms)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/cross/0.13.16/jars/cross.jar ...
+	[SUCCESSFUL ] org.scala-sbt#cross;0.13.16!cross.jar (1371ms)
+downloading https://repo1.maven.org/maven2/org/scala-sbt/ivy/ivy/2.3.0-sbt-48dd0744422128446aee9ac31aa356ee203cc9f4/ivy-2.3.0-sbt-48dd0744422128446aee9ac31aa356ee203cc9f4.jar ...
+	[SUCCESSFUL ] org.scala-sbt.ivy#ivy;2.3.0-sbt-48dd0744422128446aee9ac31aa356ee203cc9f4!ivy.jar (95ms)
+downloading https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.50/jsch-0.1.50.jar ...
+	[SUCCESSFUL ] com.jcraft#jsch;0.1.50!jsch.jar (38ms)
+downloading https://repo1.maven.org/maven2/org/scala-sbt/serialization_2.10/0.1.2/serialization_2.10-0.1.2.jar ...
+	[SUCCESSFUL ] org.scala-sbt#serialization_2.10;0.1.2!serialization_2.10.jar (37ms)
+downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-pickling_2.10/0.10.1/scala-pickling_2.10-0.10.1.jar ...
+	[SUCCESSFUL ] org.scala-lang.modules#scala-pickling_2.10;0.10.1!scala-pickling_2.10.jar (58ms)
+downloading https://repo1.maven.org/maven2/org/json4s/json4s-core_2.10/3.2.10/json4s-core_2.10-3.2.10.jar ...
+	[SUCCESSFUL ] org.json4s#json4s-core_2.10;3.2.10!json4s-core_2.10.jar (49ms)
+downloading https://repo1.maven.org/maven2/org/spire-math/jawn-parser_2.10/0.6.0/jawn-parser_2.10-0.6.0.jar ...
+	[SUCCESSFUL ] org.spire-math#jawn-parser_2.10;0.6.0!jawn-parser_2.10.jar (29ms)
+downloading https://repo1.maven.org/maven2/org/spire-math/json4s-support_2.10/0.6.0/json4s-support_2.10-0.6.0.jar ...
+	[SUCCESSFUL ] org.spire-math#json4s-support_2.10;0.6.0!json4s-support_2.10.jar (25ms)
+downloading https://repo1.maven.org/maven2/org/scalamacros/quasiquotes_2.10/2.0.1/quasiquotes_2.10-2.0.1.jar ...
+	[SUCCESSFUL ] org.scalamacros#quasiquotes_2.10;2.0.1!quasiquotes_2.10.jar (79ms)
+downloading https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.10/3.2.10/json4s-ast_2.10-3.2.10.jar ...
+	[SUCCESSFUL ] org.json4s#json4s-ast_2.10;3.2.10!json4s-ast_2.10.jar (31ms)
+downloading https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.jar ...
+	[SUCCESSFUL ] com.thoughtworks.paranamer#paranamer;2.6!paranamer.jar (26ms)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/cache/0.13.16/jars/cache.jar ...
+	[SUCCESSFUL ] org.scala-sbt#cache;0.13.16!cache.jar (1373ms)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/test-agent/0.13.16/jars/test-agent.jar ...
+	[SUCCESSFUL ] org.scala-sbt#test-agent;0.13.16!test-agent.jar (1343ms)
+downloading https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/apply-macro/0.13.16/jars/apply-macro.jar ...
+	[SUCCESSFUL ] org.scala-sbt#apply-macro;0.13.16!apply-macro.jar (1355ms)
+:: retrieving :: org.scala-sbt#boot-app
+	confs: [default]
+	49 artifacts copied, 0 already retrieved (17616kB/98ms)
+Getting Scala 2.10.6 (for sbt)...
+downloading https://repo1.maven.org/maven2/org/scala-lang/jline/2.10.6/jline-2.10.6.jar ...
+	[SUCCESSFUL ] org.scala-lang#jline;2.10.6!jline.jar (28ms)
+downloading https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.4/jansi-1.4.jar ...
+	[SUCCESSFUL ] org.fusesource.jansi#jansi;1.4!jansi.jar (31ms)
+:: retrieving :: org.scala-sbt#boot-scala
+	confs: [default]
+	5 artifacts copied, 0 already retrieved (24494kB/151ms)
+[0m[[0minfo[0m] [0mLoading project definition from /workspace/source/project[0m
+[0m[[0minfo[0m] [0mUpdating {file:/workspace/source/project/}source-build...[0m
+[0m[[0minfo[0m] [0mResolving io.spray#sbt-revolver;0.8.0 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving io.spray#sbt-revolver;0.8.0 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving com.eed3si9n#sbt-assembly;0.14.5 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving com.eed3si9n#sbt-assembly;0.14.5 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scalactic#scalactic_2.10;3.0.1 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scalactic#scalactic_2.10;3.0.1 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.6 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-reflect;2.10.6 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.pantsbuild#jarjar;1.6.4 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.pantsbuild#jarjar;1.6.4 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.apache.ant#ant;1.9.9 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.apache.ant#ant;1.9.9 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.apache.ant#ant-parent;1.9.9 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.apache.ant#ant-parent;1.9.9 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.apache.ant#ant-launcher;1.9.9 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.apache.ant#ant-launcher;1.9.9 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.apache.ant#ant-parent;1.9.9 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.ow2.asm#asm;5.2 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.ow2.asm#asm;5.2 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.ow2.asm#asm-parent;5.2 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.ow2.asm#asm-parent;5.2 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.ow2#ow2;1.3 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.ow2#ow2;1.3 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.ow2.asm#asm-commons;5.2 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.ow2.asm#asm-commons;5.2 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.ow2.asm#asm-parent;5.2 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.ow2.asm#asm-tree;5.2 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.ow2.asm#asm-tree;5.2 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.ow2.asm#asm-parent;5.2 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.apache.maven#maven-plugin-api;3.3.9 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.apache.maven#maven-plugin-api;3.3.9 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.apache.maven#maven;3.3.9 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.apache.maven#maven;3.3.9 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.apache.maven#maven-parent;27 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.apache.maven#maven-parent;27 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.apache#apache;17 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.apache#apache;17 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.apache.maven#maven-model;3.3.9 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.apache.maven#maven-model;3.3.9 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.apache.maven#maven;3.3.9 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.codehaus.plexus#plexus-utils;3.0.22 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.codehaus.plexus#plexus-utils;3.0.22 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.codehaus.plexus#plexus;3.3.1 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.codehaus.plexus#plexus;3.3.1 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.sonatype.spice#spice-parent;17 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.sonatype.spice#spice-parent;17 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.sonatype.forge#forge-parent;10 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.sonatype.forge#forge-parent;10 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.apache.commons#commons-lang3;3.4 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.apache.commons#commons-lang3;3.4 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.apache.commons#commons-parent;37 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.apache.commons#commons-parent;37 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.apache#apache;16 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.apache#apache;16 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.apache.maven#maven-artifact;3.3.9 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.apache.maven#maven-artifact;3.3.9 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.apache.maven#maven;3.3.9 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.eclipse.sisu#org.eclipse.sisu.plexus;0.3.2 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.eclipse.sisu#org.eclipse.sisu.plexus;0.3.2 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.eclipse.sisu#sisu-plexus;0.3.2 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.eclipse.sisu#sisu-plexus;0.3.2 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.sonatype.oss#oss-parent;9 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving javax.enterprise#cdi-api;1.0 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving javax.enterprise#cdi-api;1.0 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.jboss.weld#weld-api-parent;1.0 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.jboss.weld#weld-api-parent;1.0 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.jboss.weld#weld-api-bom;1.0 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.jboss.weld#weld-api-bom;1.0 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.jboss.weld#weld-parent;6 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.jboss.weld#weld-parent;6 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving javax.annotation#jsr250-api;1.0 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving javax.annotation#jsr250-api;1.0 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving javax.inject#javax.inject;1 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving javax.inject#javax.inject;1 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.eclipse.sisu#org.eclipse.sisu.inject;0.3.2 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.eclipse.sisu#org.eclipse.sisu.inject;0.3.2 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.eclipse.sisu#sisu-inject;0.3.2 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.eclipse.sisu#sisu-inject;0.3.2 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.sonatype.oss#oss-parent;9 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.codehaus.plexus#plexus-component-annotations;1.5.5 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.codehaus.plexus#plexus-component-annotations;1.5.5 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.codehaus.plexus#plexus-containers;1.5.5 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.codehaus.plexus#plexus-containers;1.5.5 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.codehaus.plexus#plexus;2.0.7 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.codehaus.plexus#plexus;2.0.7 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.codehaus.plexus#plexus-classworlds;2.5.2 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.codehaus.plexus#plexus-classworlds;2.5.2 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.codehaus.plexus#plexus;3.3.1 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving com.typesafe.sbt#sbt-native-packager;1.2.0 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving com.typesafe.sbt#sbt-native-packager;1.2.0 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.apache.commons#commons-compress;1.4.1 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.apache.commons#commons-compress;1.4.1 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.apache.commons#commons-parent;24 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.apache.commons#commons-parent;24 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.apache#apache;9 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.apache#apache;9 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.tukaani#xz;1.0 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.tukaani#xz;1.0 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#sbt;0.13.16 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#main;0.13.16 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#actions;0.13.16 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#classpath;0.13.16 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-compiler;2.10.6 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#interface;0.13.16 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#io;0.13.16 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#control;0.13.16 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#launcher-interface;1.0.1 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#completion;0.13.16 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#collections;0.13.16 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving jline#jline;2.14.4 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#api;0.13.16 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#classfile;0.13.16 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#logging;0.13.16 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#process;0.13.16 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#compiler-integration;0.13.16 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#incremental-compiler;0.13.16 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#relation;0.13.16 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#compile;0.13.16 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#persist;0.13.16 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-tools.sbinary#sbinary_2.10;0.4.2 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#compiler-ivy-integration;0.13.16 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#ivy;0.13.16 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#cross;0.13.16 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt.ivy#ivy;2.3.0-sbt-48dd0744422128446aee9ac31aa356ee203cc9f4 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving com.jcraft#jsch;0.1.50 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#serialization_2.10;0.1.2 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-lang.modules#scala-pickling_2.10;0.10.1 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scalamacros#quasiquotes_2.10;2.0.1 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.json4s#json4s-core_2.10;3.2.10 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.json4s#json4s-ast_2.10;3.2.10 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving com.thoughtworks.paranamer#paranamer;2.6 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.spire-math#jawn-parser_2.10;0.6.0 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.spire-math#json4s-support_2.10;0.6.0 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#run;0.13.16 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#task-system;0.13.16 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#tasks;0.13.16 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#tracking;0.13.16 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#cache;0.13.16 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#testing;0.13.16 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#test-agent;0.13.16 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#test-interface;1.0 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#main-settings;0.13.16 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#apply-macro;0.13.16 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#command;0.13.16 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#template-resolver;0.1 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#logic;0.13.16 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-sbt#compiler-interface;0.13.16 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-lang#jline;2.10.6 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.fusesource.jansi#jansi;1.4 ...[0m
+[0m[[0minfo[0m] [0mdownloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/io.spray/sbt-revolver/scala_2.10/sbt_0.13/0.8.0/jars/sbt-revolver.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] io.spray#sbt-revolver;0.8.0!sbt-revolver.jar (1389ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-assembly/scala_2.10/sbt_0.13/0.14.5/jars/sbt-assembly.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.eed3si9n#sbt-assembly;0.14.5!sbt-assembly.jar (1536ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-native-packager/scala_2.10/sbt_0.13/1.2.0/jars/sbt-native-packager.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.sbt#sbt-native-packager;1.2.0!sbt-native-packager.jar (3278ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/scalactic/scalactic_2.10/3.0.1/scalactic_2.10-3.0.1.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scalactic#scalactic_2.10;3.0.1!scalactic_2.10.jar(bundle) (98ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/pantsbuild/jarjar/1.6.4/jarjar-1.6.4.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.pantsbuild#jarjar;1.6.4!jarjar.jar (34ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/apache/ant/ant/1.9.9/ant-1.9.9.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.apache.ant#ant;1.9.9!ant.jar (132ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/ow2/asm/asm/5.2/asm-5.2.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.ow2.asm#asm;5.2!asm.jar (28ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/ow2/asm/asm-commons/5.2/asm-commons-5.2.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.ow2.asm#asm-commons;5.2!asm-commons.jar (38ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.apache.maven#maven-plugin-api;3.3.9!maven-plugin-api.jar (27ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/apache/ant/ant-launcher/1.9.9/ant-launcher-1.9.9.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.apache.ant#ant-launcher;1.9.9!ant-launcher.jar (26ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/ow2/asm/asm-tree/5.2/asm-tree-5.2.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.ow2.asm#asm-tree;5.2!asm-tree.jar (33ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.apache.maven#maven-model;3.3.9!maven-model.jar (35ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.apache.maven#maven-artifact;3.3.9!maven-artifact.jar (32ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.eclipse.sisu#org.eclipse.sisu.plexus;0.3.2!org.eclipse.sisu.plexus.jar(eclipse-plugin) (49ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/3.0.22/plexus-utils-3.0.22.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.codehaus.plexus#plexus-utils;3.0.22!plexus-utils.jar (33ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.apache.commons#commons-lang3;3.4!commons-lang3.jar (48ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/javax/enterprise/cdi-api/1.0/cdi-api-1.0.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] javax.enterprise#cdi-api;1.0!cdi-api.jar (29ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.eclipse.sisu#org.eclipse.sisu.inject;0.3.2!org.eclipse.sisu.inject.jar(eclipse-plugin) (47ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.codehaus.plexus#plexus-component-annotations;1.5.5!plexus-component-annotations.jar (26ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-classworlds/2.5.2/plexus-classworlds-2.5.2.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.codehaus.plexus#plexus-classworlds;2.5.2!plexus-classworlds.jar(bundle) (27ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] javax.annotation#jsr250-api;1.0!jsr250-api.jar (25ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] javax.inject#javax.inject;1!javax.inject.jar (25ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.apache.commons#commons-compress;1.4.1!commons-compress.jar (45ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/tukaani/xz/1.0/xz-1.0.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.tukaani#xz;1.0!xz.jar (32ms)[0m
+[0m[[0minfo[0m] [0mDone updating.[0m
+[0m[[0minfo[0m] [0mSet current project to scala-akka-http-quickstart (in build file:/workspace/source/)[0m
+[0m[[0minfo[0m] [0mExecuting in batch mode. For better performance use sbt's shell[0m
+[0m[[32msuccess[0m] [0mTotal time: 0 s, completed Apr 16, 2019 2:56:40 PM[0m
+[0m[[0minfo[0m] [0mUpdating {file:/workspace/source/}source...[0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.12.3 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.12.3 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-actor_2.12;2.5.3 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-actor_2.12;2.5.3 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving com.typesafe#config;1.3.1 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving com.typesafe#config;1.3.1 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-lang.modules#scala-java8-compat_2.12;0.8.0 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-lang.modules#scala-java8-compat_2.12;0.8.0 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-stream_2.12;2.5.3 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-stream_2.12;2.5.3 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.reactivestreams#reactive-streams;1.0.0 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving com.typesafe#ssl-config-core_2.12;0.2.1 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving com.typesafe#ssl-config-core_2.12;0.2.1 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-testkit_2.12;2.5.3 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-testkit_2.12;2.5.3 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-http_2.12;10.0.9 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-http_2.12;10.0.9 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-http-core_2.12;10.0.9 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-http-core_2.12;10.0.9 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-parsing_2.12;10.0.9 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-parsing_2.12;10.0.9 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-http-spray-json_2.12;10.0.9 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-http-spray-json_2.12;10.0.9 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving io.spray#spray-json_2.12;1.3.3 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving io.spray#spray-json_2.12;1.3.3 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-http-testkit_2.12;10.0.9 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-http-testkit_2.12;10.0.9 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-stream-testkit_2.12;2.4.19 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-stream-testkit_2.12;2.4.19 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scalatest#scalatest_2.12;3.0.1 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scalatest#scalatest_2.12;3.0.1 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scalactic#scalactic_2.12;3.0.1 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scalactic#scalactic_2.12;3.0.1 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-reflect;2.12.3 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-reflect;2.12.3 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-lang.modules#scala-xml_2.12;1.0.5 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-lang.modules#scala-xml_2.12;1.0.5 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-compiler;2.12.3 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-compiler;2.12.3 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-lang.modules#scala-xml_2.12;1.0.6 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving jline#jline;2.14.4 ...[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.3/scala-library-2.12.3.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-library;2.12.3!scala-library.jar (330ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.12/2.5.3/akka-actor_2.12-2.5.3.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.akka#akka-actor_2.12;2.5.3!akka-actor_2.12.jar (212ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/akka/akka-stream_2.12/2.5.3/akka-stream_2.12-2.5.3.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.akka#akka-stream_2.12;2.5.3!akka-stream_2.12.jar (197ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.12/2.5.3/akka-testkit_2.12-2.5.3.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.akka#akka-testkit_2.12;2.5.3!akka-testkit_2.12.jar (34ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/akka/akka-http_2.12/10.0.9/akka-http_2.12-10.0.9.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.akka#akka-http_2.12;10.0.9!akka-http_2.12.jar (87ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-spray-json_2.12/10.0.9/akka-http-spray-json_2.12-10.0.9.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.akka#akka-http-spray-json_2.12;10.0.9!akka-http-spray-json_2.12.jar (26ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-testkit_2.12/10.0.9/akka-http-testkit_2.12-10.0.9.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.akka#akka-http-testkit_2.12;10.0.9!akka-http-testkit_2.12.jar (28ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/config/1.3.1/config-1.3.1.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe#config;1.3.1!config.jar(bundle) (33ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-java8-compat_2.12/0.8.0/scala-java8-compat_2.12-0.8.0.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang.modules#scala-java8-compat_2.12;0.8.0!scala-java8-compat_2.12.jar(bundle) (106ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/ssl-config-core_2.12/0.2.1/ssl-config-core_2.12-0.2.1.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe#ssl-config-core_2.12;0.2.1!ssl-config-core_2.12.jar(bundle) (40ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.0.4/scala-parser-combinators_2.12-1.0.4.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4!scala-parser-combinators_2.12.jar(bundle) (43ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-core_2.12/10.0.9/akka-http-core_2.12-10.0.9.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.akka#akka-http-core_2.12;10.0.9!akka-http-core_2.12.jar (230ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/akka/akka-parsing_2.12/10.0.9/akka-parsing_2.12-10.0.9.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.akka#akka-parsing_2.12;10.0.9!akka-parsing_2.12.jar (81ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/io/spray/spray-json_2.12/1.3.3/spray-json_2.12-1.3.3.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] io.spray#spray-json_2.12;1.3.3!spray-json_2.12.jar(bundle) (40ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/akka/akka-stream-testkit_2.12/2.4.19/akka-stream-testkit_2.12-2.4.19.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.akka#akka-stream-testkit_2.12;2.4.19!akka-stream-testkit_2.12.jar (36ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/scalatest/scalatest_2.12/3.0.1/scalatest_2.12-3.0.1.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scalatest#scalatest_2.12;3.0.1!scalatest_2.12.jar(bundle) (305ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.0.1/scalactic_2.12-3.0.1.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scalactic#scalactic_2.12;3.0.1!scalactic_2.12.jar(bundle) (48ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.3/scala-reflect-2.12.3.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.12.3!scala-reflect.jar (151ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.5/scala-xml_2.12-1.0.5.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang.modules#scala-xml_2.12;1.0.5!scala-xml_2.12.jar(bundle) (43ms)[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.3/scala-compiler-2.12.3.jar ...[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-compiler;2.12.3!scala-compiler.jar (363ms)[0m
+[0m[[0minfo[0m] [0mDone updating.[0m
+[0m[[33mwarn[0m] [0mFound version conflict(s) in library dependencies; some are suspected to be binary incompatible:[0m
+[0m[[33mwarn[0m] [0m[0m
+[0m[[33mwarn[0m] [0m	* com.typesafe.akka:akka-testkit_2.12:2.5.3 is selected over 2.4.19[0m
+[0m[[33mwarn[0m] [0m	    +- com.exabeam:scala-akka-http-quickstart_2.12:1.0    (depends on 2.5.3)[0m
+[0m[[33mwarn[0m] [0m	    +- com.typesafe.akka:akka-stream-testkit_2.12:2.4.19 () (depends on 2.4.19)[0m
+[0m[[33mwarn[0m] [0m[0m
+[0m[[33mwarn[0m] [0m	* com.typesafe.akka:akka-stream_2.12:2.5.3 is selected over 2.4.19[0m
+[0m[[33mwarn[0m] [0m	    +- com.typesafe.akka:akka-http-core_2.12:10.0.9       (depends on 2.4.19)[0m
+[0m[[33mwarn[0m] [0m	    +- com.typesafe.akka:akka-stream-testkit_2.12:2.4.19 () (depends on 2.4.19)[0m
+[0m[[33mwarn[0m] [0m	    +- com.exabeam:scala-akka-http-quickstart_2.12:1.0    (depends on 2.4.19)[0m
+[0m[[33mwarn[0m] [0m[0m
+[0m[[33mwarn[0m] [0m	* com.typesafe.akka:akka-actor_2.12:2.5.3 is selected over 2.4.19[0m
+[0m[[33mwarn[0m] [0m	    +- com.exabeam:scala-akka-http-quickstart_2.12:1.0    (depends on 2.5.3)[0m
+[0m[[33mwarn[0m] [0m	    +- com.typesafe.akka:akka-stream_2.12:2.5.3           (depends on 2.5.3)[0m
+[0m[[33mwarn[0m] [0m	    +- com.typesafe.akka:akka-testkit_2.12:2.5.3          (depends on 2.5.3)[0m
+[0m[[33mwarn[0m] [0m	    +- com.typesafe.akka:akka-parsing_2.12:10.0.9         (depends on 2.4.19)[0m
+[0m[[33mwarn[0m] [0m[0m
+[0m[[33mwarn[0m] [0mRun 'evicted' to see detailed eviction warnings[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /workspace/source/target/scala-2.12/classes...[0m
+[0m[[0minfo[0m] [0m'compiler-interface' not yet compiled for Scala 2.12.3. Compiling...[0m
+[0m[[0minfo[0m] [0m  Compilation completed in 27.054 s[0m
+[0m[[32msuccess[0m] [0mTotal time: 40 s, completed Apr 16, 2019 2:57:20 PM[0m
+[0m[[0minfo[0m] [0mIncluding: scala-library-2.12.3.jar[0m
+[0m[[0minfo[0m] [0mIncluding: akka-actor_2.12-2.5.3.jar[0m
+[0m[[0minfo[0m] [0mIncluding: config-1.3.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding: scala-java8-compat_2.12-0.8.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding: akka-stream_2.12-2.5.3.jar[0m
+[0m[[0minfo[0m] [0mIncluding: reactive-streams-1.0.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding: ssl-config-core_2.12-0.2.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding: scala-parser-combinators_2.12-1.0.4.jar[0m
+[0m[[0minfo[0m] [0mIncluding: akka-testkit_2.12-2.5.3.jar[0m
+[0m[[0minfo[0m] [0mIncluding: akka-http_2.12-10.0.9.jar[0m
+[0m[[0minfo[0m] [0mIncluding: akka-http-core_2.12-10.0.9.jar[0m
+[0m[[0minfo[0m] [0mIncluding: akka-parsing_2.12-10.0.9.jar[0m
+[0m[[0minfo[0m] [0mIncluding: akka-http-spray-json_2.12-10.0.9.jar[0m
+[0m[[0minfo[0m] [0mIncluding: spray-json_2.12-1.3.3.jar[0m
+[0m[[0minfo[0m] [0mIncluding: akka-http-testkit_2.12-10.0.9.jar[0m
+[0m[[0minfo[0m] [0mIncluding: akka-stream-testkit_2.12-2.4.19.jar[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /workspace/source/target/scala-2.12/test-classes...[0m
+[0m[[0minfo[0m] [0m[32mServiceSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mService[0m[0m
+[0m[[0minfo[0m] [0m[32m- should respond to health check[0m[0m
+[0m[[0minfo[0m] [0m[32mService[0m[0m
+[0m[[0minfo[0m] [0m[32m- should respond to[0m[0m
+[0m[[0minfo[0m] [0m[36mRun completed in 2 seconds, 701 milliseconds.[0m[0m
+[0m[[0minfo[0m] [0m[36mTotal number of tests run: 2[0m[0m
+[0m[[0minfo[0m] [0m[36mSuites: completed 1, aborted 0[0m[0m
+[0m[[0minfo[0m] [0m[36mTests: succeeded 2, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0minfo[0m] [0m[32mAll tests passed.[0m[0m
+[0m[[0minfo[0m] [0mChecking every *.class/*.jar file's SHA-1.[0m
+[0m[[0minfo[0m] [0mMerging files...[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/MANIFEST.MF' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'reference.conf' with strategy 'concat'[0m
+[0m[[33mwarn[0m] [0mStrategy 'concat' was applied to a file[0m
+[0m[[33mwarn[0m] [0mStrategy 'discard' was applied to a file[0m
+[0m[[0minfo[0m] [0mSHA-1: c6dc1c47c96a1ebbe4f19aadd11a437bae4874e5[0m
+[0m[[0minfo[0m] [0mPackaging /workspace/source/target/scala-2.12/scala-akka-http-quickstart-assembly-1.0.jar ...[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m
+[0m[[32msuccess[0m] [0mTotal time: 26 s, completed Apr 16, 2019 2:57:46 PM[0m
+Step: build-step-build-container-build:
+
+[36mINFO[0m[0000] Downloading base image openjdk:8-jre-alpine  
+ERROR: logging before flag.Parse: E0416 14:57:50.761131       9 metadata.go:142] while reading 'google-dockercfg' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg
+ERROR: logging before flag.Parse: E0416 14:57:50.765203       9 metadata.go:159] while reading 'google-dockercfg-url' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg-url
+2019/04/16 14:57:50 No matching credentials were found, falling back on anonymous
+[36mINFO[0m[0001] Error while retrieving image from cache: getting file info: stat /workspace/sha256:922d65ba63c3cccb58c0a03e8bdfa86161c60c2aeb33db85d952d99c54f9662b: no such file or directory 
+[36mINFO[0m[0001] Downloading base image openjdk:8-jre-alpine  
+2019/04/16 14:57:51 No matching credentials were found, falling back on anonymous
+[36mINFO[0m[0002] Checking for cached layer 10.11.250.168:5000/jtabo-237717/cache:a0cbc1fb7d86f965a4fa6b14e92de5fe13e2b7865b405ea90c4f8dd718a6294f... 
+2019/04/16 14:57:52 No matching credentials were found, falling back on anonymous
+[36mINFO[0m[0002] No cached layer found for cmd RUN mkdir -p /opt/app 
+[36mINFO[0m[0002] Unpacking rootfs as cmd RUN mkdir -p /opt/app requires it. 
+[36mINFO[0m[0004] Taking snapshot of full filesystem...        
+[36mINFO[0m[0005] RUN mkdir -p /opt/app                        
+[36mINFO[0m[0005] cmd: /bin/sh                                 
+[36mINFO[0m[0005] args: [-c mkdir -p /opt/app]                 
+[36mINFO[0m[0005] Taking snapshot of full filesystem...        
+[36mINFO[0m[0006] WORKDIR /opt/app                             
+[36mINFO[0m[0006] cmd: workdir                                 
+[36mINFO[0m[0006] Changed working directory to /opt/app        
+[36mINFO[0m[0006] Pushing layer 10.11.250.168:5000/jtabo-237717/cache:a0cbc1fb7d86f965a4fa6b14e92de5fe13e2b7865b405ea90c4f8dd718a6294f to cache now 
+[36mINFO[0m[0006] No files changed in this command, skipping snapshotting. 
+2019/04/16 14:57:57 pushed blob: sha256:29dff3f1b258d9739b1e4c9b311f8fc5247b4a30141f51f587e9d98ceea73e3b
+2019/04/16 14:57:57 pushed blob: sha256:38e2bdd82e7a996fc755f9f03b78c0693276a4cfa1e5f55f4f5d89422a0497b4
+2019/04/16 14:57:57 10.11.250.168:5000/jtabo-237717/cache:a0cbc1fb7d86f965a4fa6b14e92de5fe13e2b7865b405ea90c4f8dd718a6294f: digest: sha256:073eb023ce99e0b4249c18d75e37bd33f0b17d9cdbd9d9872522651152527f74 size: 424
+[36mINFO[0m[0006] Using files from context: [/workspace/source/target/scala-2.12/scala-akka-http-quickstart-assembly-1.0.jar] 
+[36mINFO[0m[0006] COPY target/scala-*/*.jar /opt/app/app.jar   
+[36mINFO[0m[0007] Taking snapshot of files...                  
+[36mINFO[0m[0007] WORKDIR /opt/app                             
+[36mINFO[0m[0007] cmd: workdir                                 
+[36mINFO[0m[0007] Changed working directory to /opt/app        
+[36mINFO[0m[0007] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0007] CMD ["java", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-jar", "app.jar"] 
+[36mINFO[0m[0007] No files changed in this command, skipping snapshotting. 
+2019/04/16 14:57:58 pushed blob: sha256:f98ee1e74edb238cee0561a773650635da71184e5b0bf56580fb72e8433d421b
+2019/04/16 14:57:58 pushed blob: sha256:29dff3f1b258d9739b1e4c9b311f8fc5247b4a30141f51f587e9d98ceea73e3b
+2019/04/16 14:57:58 pushed blob: sha256:bdf0201b3a056acc4d6062cc88cd8a4ad5979983bfb640f15a145e09ed985f92
+2019/04/16 14:57:58 pushed blob: sha256:9e12771959adeb3408e625492accf845401aa66bcca638859a6b34176d753d62
+2019/04/16 14:57:58 pushed blob: sha256:03f319499c088fcedda18eca023901ea8a320deebaf6fd139c83f2f34e99efc5
+2019/04/16 14:57:59 pushed blob: sha256:ae272eb2814b212db0ef2f5b8db4be474597598efb779c8c1c4073d507939bc6
+2019/04/16 14:57:59 10.11.250.168:5000/********/qs:0.0.1: digest: sha256:473ae5ad8b41e65764991cd547120418a7dc398807d49b5d54ddda83e31e1ee8 size: 1078
+Step: build-step-build-post-build:
+
+{"level":"info","msg":"no CVE provider running in the current ** namespace so skip adding image to be analysed","time":"2019-04-16T14:58:01Z"}
+Step: build-step-promote-changelog:
+
+{"level":"info","msg":"Converted /workspace/source/charts/qs to an unshallow repository\n","time":"2019-04-16T14:58:06Z"}
+{"level":"info","msg":"Generating change log from git ref 980bbb98a39fc0e4577f80d992bd3e36cf97bef0 =\u003e 3f0c10383d5e2f1af3fd01f1cf5c8aaf39647bb9\n","time":"2019-04-16T14:58:06Z"}
+{"level":"warning","msg":"Failed to enrich commits with issues: User.jenkins.io \"-0\" is invalid: metadata.name: Invalid value: \"-0\": a DNS-1123 subdomain must consist of lower case alphanumeric characters, '-' or '.', and must start and end with an alphanumeric character (e.g. 'example.com', regex used for validation is '[a-z0-9]([-a-z0-9]*[a-z0-9])?(\\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*')\n","time":"2019-04-16T14:58:06Z"}
+{"level":"warning","msg":"Failed to enrich commits with issues: User.jenkins.io \"-0\" is invalid: metadata.name: Invalid value: \"-0\": a DNS-1123 subdomain must consist of lower case alphanumeric characters, '-' or '.', and must start and end with an alphanumeric character (e.g. 'example.com', regex used for validation is '[a-z0-9]([-a-z0-9]*[a-z0-9])?(\\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*')\n","time":"2019-04-16T14:58:07Z"}
+{"level":"info","msg":"Finding issues in commit messages using git format\n","time":"2019-04-16T14:58:07Z"}
+{"level":"warning","msg":"No release found for ********/qs and tag v0.0.1 so creating a new release\n","time":"2019-04-16T14:58:07Z"}
+{"level":"info","msg":"Updated the release information at https://github.com/********/qs/releases/tag/v0.0.1\n","time":"2019-04-16T14:58:08Z"}
+{"level":"info","msg":"generated: /workspace/source/charts/qs/templates/release.yaml\n","time":"2019-04-16T14:58:08Z"}
+{"level":"info","msg":"Created Release qs-0-0-1 resource in namespace **\n","time":"2019-04-16T14:58:08Z"}
+{"level":"info","msg":"Updating PipelineActivity ********-qs-master-1 with version 0.0.1\n","time":"2019-04-16T14:58:08Z"}
+{"level":"info","msg":"Updated PipelineActivities ********-qs-master-1 with release notes URL: https://github.com/********/qs/releases/tag/v0.0.1\n","time":"2019-04-16T14:58:08Z"}
+Step: build-step-promote-helm-release:
+
+{"level":"warning","msg":"No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080\n","time":"2019-04-16T14:58:09Z"}
+{"level":"info","msg":"Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io\n","time":"2019-04-16T14:58:12Z"}
+{"level":"info","msg":"Successfully added Helm repository chartmuseum.jenkins-x.io.\n","time":"2019-04-16T14:58:12Z"}
+{"level":"info","msg":"Adding missing Helm repo: jenkins-x-chartmuseum:8080 http://jenkins-x-chartmuseum:8080\n","time":"2019-04-16T14:58:13Z"}
+{"level":"info","msg":"Successfully added Helm repository jenkins-x-chartmuseum:8080.\n","time":"2019-04-16T14:58:13Z"}
+{"level":"warning","msg":"No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080\n","time":"2019-04-16T14:58:13Z"}
+{"level":"info","msg":"Uploading chart file qs-0.0.1.tgz to http://jenkins-x-chartmuseum:8080/api/charts\n","time":"2019-04-16T14:58:13Z"}
+{"level":"info","msg":"Received 201 response: {\"saved\":true}\n","time":"2019-04-16T14:58:13Z"}
+Step: build-step-promote-**-promote:
+
+{"level":"warning","msg":"prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/**/issues/2410","time":"2019-04-16T14:58:14Z"}
+{"level":"info","msg":"Promoting app qs version 0.0.1 to namespace **-staging\n","time":"2019-04-16T14:58:14Z"}
+{"level":"info","msg":"Created Pull Request: https://github.com/********/environment-stalkerjade-staging/pull/1\n\n","time":"2019-04-16T14:58:20Z"}
+{"level":"info","msg":"Pull Request https://github.com/********/environment-stalkerjade-staging/pull/1 is merged at sha 64b1e36dbc3f893de765db4657781eb8298ac36b\n","time":"2019-04-16T14:59:06Z"}
+{"level":"info","msg":"Pull Request merged but we are not waiting for the update pipeline to complete!","time":"2019-04-16T14:59:06Z"}
+{"level":"warning","msg":"Could not find the service URL in namespace **-staging for names qs, **-qs, **-staging-qs\n","time":"2019-04-16T14:59:06Z"}
+Step: build-step-source-mkdir-********-qs-master-j87c4:
+
+{"level":"warn","ts":1555426781.242936,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1555426781.2584615,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /pvc/from-build-pack/workspace\""}
+Step: build-step-source-copy-********-qs-master-xcpmb:
+
+{"level":"warn","ts":1555426782.4609432,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1555426796.19837,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"cp -r /workspace/source/. /pvc/from-build-pack/workspace\""}
