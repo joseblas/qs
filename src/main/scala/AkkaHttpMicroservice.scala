@@ -43,7 +43,7 @@ trait Service extends Protocols {
       path("") {
         get {
           complete {
-            ToResponseMarshallable(Reply("Hello World"))
+            ToResponseMarshallable(Reply("Hello Patch 1"))
           }
         }
       }
