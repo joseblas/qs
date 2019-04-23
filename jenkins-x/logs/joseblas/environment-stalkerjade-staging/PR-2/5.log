@@ -1,0 +1,36 @@
+Step: build-step-credential-initializer-g9f97:
+
+{"level":"warn","ts":1556010285.457273,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/backport-container-name-fix\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1556010285.458246,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Step: build-step-git-source-********-environment-stalkerjad-frj46:
+
+{"level":"warn","ts":1556010286.6733036,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/backport-container-name-fix\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1556010287.7772794,"logger":"fallback-logger","caller":"git-init/main.go:99","msg":"Successfully cloned \"https://github.com/********/environment-stalkerjade-staging\" @ \"a0c5a34bf02dccd86ed9b0f7ade9145bb1271d9a\" in path \"/workspace/source\""}
+Step: build-step-place-tools:
+
+Step: build-step-git-merge:
+
+Warning failed to load version: failed to parse version -dev+9e73adc0b: No Major.Minor.Patch elements found
+time="2019-04-23T09:04:49Z" level=info msg="got "
+Using SHAs from PULL_REFS=master:64b1e36dbc3f893de765db4657781eb8298ac36b,2:a0c5a34bf02dccd86ed9b0f7ade9145bb1271d9a
+ran git fetch origin a0c5a34bf02dccd86ed9b0f7ade9145bb1271d9a: 64b1e36dbc3f893de765db4657781eb8298ac36b: in 
+Unshallowed git repo in 
+ran git checkout master in 
+ran git reset --hard 64b1e36dbc3f893de765db4657781eb8298ac36b in 
+ran clean --force -d . in 
+ran git merge a0c5a34bf02dccd86ed9b0f7ade9145bb1271d9a in 
+Step: build-step-build-helm-build:
+
+No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: releases http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository releases.
+Adding missing Helm repo: jenkins-x http://chartmuseum.jenkins-x.io
+Successfully added Helm repository jenkins-x.
+Step: build-step-source-mkdir-********-environment-stalkerjad-47kzb:
+
+{"level":"warn","ts":1556010361.4862792,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1556010361.511772,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /pvc/from-build-pack/workspace\""}
+Step: build-step-source-copy-********-environment-stalkerjad-vmcln:
+
+{"level":"warn","ts":1556010362.5185888,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1556010362.6719227,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"cp -r /workspace/source/. /pvc/from-build-pack/workspace\""}
